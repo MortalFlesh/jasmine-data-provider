@@ -1,6 +1,6 @@
 {
     "name": "jasmine-data-provider",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "simple data provider for jasmine",
     "main": "src/index.js",
     "repository": {
