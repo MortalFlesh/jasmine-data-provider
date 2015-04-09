@@ -12,6 +12,7 @@
         "data-provider"
     ],
     "author": "MortalFlesh",
+    "license" : "MIT",
     "bugs": {
         "url": "https://github.com/MortalFlesh/jasmine-data-provider/issues"
     },
