@@ -3,12 +3,26 @@ var using = function (values, func) {
         values = values();
     }
 
-    for (var i = 0; i < values.length; i++) {
-        if (!(values[i] instanceof Array)) {
-            values[i] = [values[i]];
-        }
+    if (values instanceof Array) {
+        values.forEach(function(value) {
+            if (!(value instanceof Array)) {
+                value = [value];
+            }
 
-        func.apply(this, values[i]);
+            func.apply(this, value);
+        });
+    } else {
+        var objectKeys = Object.keys(values);
+
+        objectKeys.forEach(function(key) {
+            if (!(values[key] instanceof Array)) {
+                values[key] = [values[key]];
+            }
+
+            values[key].push(key);
+
+            func.apply(this, values[key]);
+        });
     }
 };
 
