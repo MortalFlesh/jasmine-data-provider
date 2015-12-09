@@ -60,6 +60,10 @@ describe('My fantastic test', function () {
 });
 ```
 
+## JS Module Loaders
+
+CommonJS (like browserify), AMD (like requirejs)
+
 ## Browser compatibility
 
 Chrome 5+, Firefox 4+, Opera 12+, Safari 5+ and Internet Explorer 9+ (oh yeah..)
